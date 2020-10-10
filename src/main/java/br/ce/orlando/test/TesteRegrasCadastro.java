@@ -1,5 +1,5 @@
-package br.ce.wcaquino.test;
-import static br.ce.wcaquino.core.DriverFactory.getDriver;
+package br.ce.orlando.test;
+import static br.ce.orlando.core.DriverFactory.getDriver;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -13,9 +13,9 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
-import br.ce.wcaquino.core.BaseTest;
-import br.ce.wcaquino.core.DSL;
-import br.ce.wcaquino.page.CampoTreinamentoPage;
+import br.ce.orlando.core.BaseTest;
+import br.ce.orlando.core.DSL;
+import br.ce.orlando.page.CampoTreinamentoPage;
 
 @RunWith(Parameterized.class)
 public class TesteRegrasCadastro extends BaseTest {

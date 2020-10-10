@@ -1,12 +1,12 @@
-package br.ce.wcaquino.suites;
+package br.ce.orlando.suites;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import br.ce.wcaquino.core.DriverFactory;
-import br.ce.wcaquino.test.TesteCadastro;
-import br.ce.wcaquino.test.TesteRegrasCadastro;
+import br.ce.orlando.core.DriverFactory;
+import br.ce.orlando.test.TesteCadastro;
+import br.ce.orlando.test.TesteRegrasCadastro;
 
 @RunWith(Suite.class)
 @SuiteClasses({

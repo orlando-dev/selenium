@@ -1,7 +1,7 @@
-package br.ce.wcaquino.page;
+package br.ce.orlando.page;
 import org.openqa.selenium.By;
 
-import br.ce.wcaquino.core.BasePage;
+import br.ce.orlando.core.BasePage;
 
 public class CampoTreinamentoPage extends BasePage {
 

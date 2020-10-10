@@ -1,4 +1,4 @@
-package br.ce.wcaquino.core;
+package br.ce.orlando.core;
 
 public class Propriedades {
 	

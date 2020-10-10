@@ -1,5 +1,5 @@
-package br.ce.wcaquino.core;
-import static br.ce.wcaquino.core.DriverFactory.getDriver;
+package br.ce.orlando.core;
+import static br.ce.orlando.core.DriverFactory.getDriver;
 
 import java.util.ArrayList;
 import java.util.List;

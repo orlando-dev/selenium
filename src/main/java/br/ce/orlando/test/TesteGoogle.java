@@ -1,4 +1,4 @@
-package br.ce.wcaquino.test;
+package br.ce.orlando.test;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

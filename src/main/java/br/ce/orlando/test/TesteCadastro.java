@@ -1,12 +1,12 @@
-package br.ce.wcaquino.test;
-import static br.ce.wcaquino.core.DriverFactory.getDriver;
+package br.ce.orlando.test;
+import static br.ce.orlando.core.DriverFactory.getDriver;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.ce.wcaquino.core.BaseTest;
-import br.ce.wcaquino.page.CampoTreinamentoPage;
+import br.ce.orlando.core.BaseTest;
+import br.ce.orlando.page.CampoTreinamentoPage;
 
 public class TesteCadastro extends BaseTest {
 	

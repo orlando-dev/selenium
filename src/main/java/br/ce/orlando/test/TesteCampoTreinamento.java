@@ -1,5 +1,5 @@
-package br.ce.wcaquino.test;
-import static br.ce.wcaquino.core.DriverFactory.getDriver;
+package br.ce.orlando.test;
+import static br.ce.orlando.core.DriverFactory.getDriver;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,8 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import br.ce.wcaquino.core.DSL;
-import br.ce.wcaquino.core.DriverFactory;
+import br.ce.orlando.core.DSL;
+import br.ce.orlando.core.DriverFactory;
 
 public class TesteCampoTreinamento {
 	

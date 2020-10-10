@@ -1,7 +1,7 @@
-package br.ce.wcaquino.core;
+package br.ce.orlando.core;
 
-import static br.ce.wcaquino.core.DriverFactory.getDriver;
-import static br.ce.wcaquino.core.DriverFactory.killDriver;
+import static br.ce.orlando.core.DriverFactory.getDriver;
+import static br.ce.orlando.core.DriverFactory.killDriver;
 
 import java.io.File;
 import java.io.IOException;
