@@ -1,0 +1,62 @@
+1 - Baixe o driver e veja se suporta a versão atual do seu Chrome. ChormeDriver realiza a comunicação do java com o browser 
+
+link para baixar o chrome driver:
+https://chromedriver.chromium.org/downloads
+
+2 - Neste próximo link desmontra como configurar o ambiente em cada sistema, seja ela Windows, Linux e OSX.
+
+https://medium.com/@wcaquino/configurando-drivers-do-selenium-no-linux-windows-e-osx-1fed9651b200
+
+---
+
+1 - Agora baixe a jdk do java e instale: 
+https://www.oracle.com/br/java/technologies/javase-downloads.html
+
+2 - Utilize o Eclipse IDE, baixe aqui e o instale: 
+https://www.eclipse.org/downloads/
+
+3 - Com eclipse aberto, vá em File >> New >> Other 
+	3.1 - Na caixa de pesquisa, digite maven e selecione a opção Maven Project e click NEXT
+	3.2 - Click Create a simple project(skip archtype selection) e se quiser pode selecionar a sua Workspace padrão para esse projeto e o seu Working set e click NEXT
+	3.3 - Na caixa de texto do Group Id: coloque um nome que queira, por exemplo >> br.ce.orlando
+	      No caixa de texto do Artifact id: Coloque o nome do projeto, exemplo >> CursoSelenium 
+	      Feito isso mais abaixo click em FINISH e o projeto maven foi criado
+
+4 - Agora edite o arquivo pom.xml
+	4.1 - Adcionando as dependencias do selenium(Realização dos testes web no browser), Junit(framework para verificar os testes) e Apache commomns IO(usado para entrada e saida de arquivos)
+	      Copie e cole no seu pom.xml só as partes de dependencies até o final e salve. Agora ambiente está configurado. 		
+	
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.ce.orlando</groupId>
+	<artifactId>selenium</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.8.0</version>
+		</dependency>
+
+	</dependencies>
+</project>
+
+
+5 - Troque a JRE para 1.8 ou Java SE 8
+    Remova test java e test resources
+	
