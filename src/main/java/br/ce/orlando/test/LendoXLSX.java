@@ -25,6 +25,7 @@ public class LendoXLSX {
 			FileInputStream arquivo = new FileInputStream(new File(LendoXLSX.fileName));
 
 			// cria um workbook = planilha toda com todas as abas
+			@SuppressWarnings("resource")
 			XSSFWorkbook workbook = new XSSFWorkbook(arquivo);
 
 			// recuperamos apenas a primeira aba ou primeira planilha
