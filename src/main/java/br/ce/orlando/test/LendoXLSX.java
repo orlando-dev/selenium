@@ -51,7 +51,7 @@ public class LendoXLSX {
 					switch (cell.getColumnIndex()) {
 
 					case 0:
-						String numeroObtido = cell.getStringCellValue();
+						@SuppressWarnings("unused") String numeroObtido = cell.getStringCellValue();
 						System.out.println("TIPO STRING: " + cell.getStringCellValue());
 						
 						break;

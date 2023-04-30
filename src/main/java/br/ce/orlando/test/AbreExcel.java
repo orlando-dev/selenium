@@ -26,7 +26,8 @@ public class AbreExcel {
                  FileInputStream arquivo = new FileInputStream(new File(
                                AbreExcel.fileName));
                  
-                 HSSFWorkbook workbook = new HSSFWorkbook(arquivo);
+                 @SuppressWarnings("resource")
+				HSSFWorkbook workbook = new HSSFWorkbook(arquivo);
 
                  HSSFSheet sheetAlunos = workbook.getSheetAt(0);
 
@@ -66,7 +67,7 @@ public class AbreExcel {
 
           } catch (FileNotFoundException e) {
                  e.printStackTrace();
-                 System.out.println("Arquivo Excel não encontrado!");
+                 System.out.println("Arquivo Excel nï¿½o encontrado!");
           } catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("no sei");
@@ -81,7 +82,7 @@ public class AbreExcel {
                  int aprovados = 0;
                  int reprovados = 0;
                  for (Aluno aluno : listaAlunos) {
-                        System.out.println("Aluno: " + aluno.getNome() + " Média: "
+                        System.out.println("Aluno: " + aluno.getNome() + " Mï¿½dia: "
                                      + aluno.getMedia());
                         soma = soma + aluno.getMedia();
                         if (aluno.getMedia() > maior) {
@@ -104,7 +105,7 @@ public class AbreExcel {
                  System.out.println("O numero de alunos aprovados e: " + aprovados);
                  System.out
                                .println("O numero de alunos reprovados e: " + reprovados);
-                 System.out.println("Número total de alunos: " + listaAlunos.size());
+                 System.out.println("Nï¿½mero total de alunos: " + listaAlunos.size());
           }
 
     }
