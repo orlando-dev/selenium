@@ -14,15 +14,16 @@ public class UploadFileTest extends BaseTest {
 	
 	@Test
 	public void deveRealizarUploadFileTest() {
-		filePO.acessarTelaInicial();
 		filePO.sendUploadFiles();
+		filePO.acessarTelaInicial();
 		
 		try {
 			PlanilhaTestes.escreverResultadoTeste("ProjetoSI - Casos de teste - Funcionais Automatizados - E2E.xlsx", "UploadFileTest.java", false);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+			
+		
 	}
 	
 }

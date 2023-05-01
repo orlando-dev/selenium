@@ -19,7 +19,7 @@ public class FilePO extends BasePage {
 		}
 		
 		public void sendUploadFiles() {
-			WebElement inputFile = getDriver().findElement(By.id("file-upload"));
+			WebElement inputFile = getDriver().findElement(By.id("file-uploaddd"));
 			String filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\Geralt.png";
 			inputFile.sendKeys(filePath);
 		}
